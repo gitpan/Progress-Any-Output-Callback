@@ -1,0 +1,40 @@
+NAME
+    Progress::Any::Output::Callback - Propagate progress update to a
+    callback function
+
+VERSION
+    version 0.01
+
+SYNOPSIS
+     use Progress::Any::Output;
+     Progress::Any::Output->set('Callback', callback=>sub { ... });
+
+DESCRIPTION
+    This output propagates progress update to your specified callback.
+    Callback will receive what the output's update() receives: "$self,
+    %args" where %args contains: "indicator", "message", "level", "status",
+    etc.
+
+METHODS
+  new(%args) => OBJ
+    Instantiate. Usually called through
+    "Progress::Any::Output->set("Callback", %args)".
+
+    Known arguments:
+
+    *   callback => CODE
+
+        Required.
+
+SEE ALSO
+    Progress::Any
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2013 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
