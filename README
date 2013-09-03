@@ -3,7 +3,7 @@ NAME
     callback function
 
 VERSION
-    version 0.01
+    version 0.02
 
 SYNOPSIS
      use Progress::Any::Output;
@@ -12,8 +12,7 @@ SYNOPSIS
 DESCRIPTION
     This output propagates progress update to your specified callback.
     Callback will receive what the output's update() receives: "$self,
-    %args" where %args contains: "indicator", "message", "level", "status",
-    etc.
+    %args" where %args contains: "indicator", "message", "level", etc.
 
 METHODS
   new(%args) => OBJ

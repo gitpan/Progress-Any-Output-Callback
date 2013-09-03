@@ -4,7 +4,7 @@ use 5.010001;
 use strict;
 use warnings;
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 sub new {
     my ($class, %args) = @_;
@@ -21,8 +21,8 @@ sub update {
 1;
 # ABSTRACT: Propagate progress update to a callback function
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -31,7 +31,7 @@ Progress::Any::Output::Callback - Propagate progress update to a callback functi
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -42,7 +42,7 @@ version 0.01
 
 This output propagates progress update to your specified callback. Callback will
 receive what the output's update() receives: C<< $self, %args >> where C<%args>
-contains: C<indicator>, C<message>, C<level>, C<status>, etc.
+contains: C<indicator>, C<message>, C<level>, etc.
 
 =for Pod::Coverage ^(update)$
 
@@ -79,4 +79,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
